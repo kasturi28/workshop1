@@ -30,11 +30,22 @@ public class GamblerProgram {
 			System.out.println("Gambler's total amount = " + amountafterbetting);
 
 		} else {
-			
+
 			System.out.println("Gambler lost the bet...");
 			amountafterbetting = amount - bet;
 			System.out.println("Gambler's total amount = " + amountafterbetting);
 
+		}
+
+		for (amount = 100; amount < 150; amount++) {
+			amountafterbetting = amount + bet;
+			System.out.println("Gambler won the bet...");
+			System.out.println("Gambler's total amount = " + amountafterbetting);
+		}
+		for (amount = 100; amount > 50; amount--) {
+			amountafterbetting = amount - bet;
+			System.out.println("Gambler lost the bet...");
+			System.out.println("Gambler's total amount = " + amountafterbetting);
 		}
 
 	}
